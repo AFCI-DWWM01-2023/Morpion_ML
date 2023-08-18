@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Clash</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1><span>TIC TAC</span> CLASH</h1>
+  <div  id="mode-selection">
+    <label>
+      <input type="radio" name="mode" value="friend" checked> Jouer contre un ami
+    </label>
+    <label>
+      <input type="radio" name="mode" value="computer"> Jouer contre l'ordinateur
+    </label>
+  </div>
+  <div id="board">
+    <div class="cell" id="cellZero" onclick="placeMarker(0)"></div>
+    <div class="cell" onclick="placeMarker(1)"></div>
+    <div class="cell" onclick="placeMarker(2)"></div>
+    <div class="cell" onclick="placeMarker(3)"></div>
+    <div class="cell" onclick="placeMarker(4)"></div>
+    <div class="cell" onclick="placeMarker(5)"></div>
+    <div class="cell" onclick="placeMarker(6)"></div>
+    <div class="cell" onclick="placeMarker(7)"></div>
+    <div class="cell" onclick="placeMarker(8)"></div>
+  </div>
+  <script src="script.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,70 @@
+body{
+  background: rgb(252,251,104);
+  background: radial-gradient(circle, rgba(252,251,104,1) 0%, rgba(204,255,101,1) 49%, rgba(144,255,166,1) 100%);
+  font-family: 'Roboto', sans-serif;
+}
+
+#board {
+  background: white;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 300px;
+  margin-bottom: 20px;
+}
+  
+.cell {
+  background: white;
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  cursor: pointer;
+}
+
+  
+h1{
+  font-size: 50px;
+  text-align: center;
+  margin: 80px 0 40px 0;
+}
+span{
+  font-size: 30px;
+}
+
+#mode-selection{
+ text-align: center;
+ margin-bottom: 20px;
+}
+
+.popup {
+  width: 200px;
+  height: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.popup p {
+  text-align: center;
+  margin-top: 30;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+}
